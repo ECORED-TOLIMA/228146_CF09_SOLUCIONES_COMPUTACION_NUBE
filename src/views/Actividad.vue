@@ -17,10 +17,10 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: 'Misión API.',
       titulo: 'Cuestionario',
       introduccion:
-        '<b> Objetivo:</b> Evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
+        '<b> Objetivo:</b> evaluar la comprensión de los conceptos fundamentales relacionados con Internet, programación para desarrollo <em>web</em>, arquitectura orientada a servicios, desarrollo de APIs y pruebas de <em>software.</em>',
       barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO.',
@@ -28,400 +28,656 @@ export default {
         {
           id: 1,
           texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
+            '¿Cuál es la función principal de Internet en el contexto del desarrollo web?',
           imagen: require('@/assets/actividad/imagen1.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
+              texto:
+                'Almacenar programas únicamente en computadores personales.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto:
+                'Permitir la comunicación y el intercambio de información entre sistemas conectados.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Ejecutar únicamente aplicaciones locales.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Reemplazar los sistemas operativos.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 2,
           texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
+            '¿Cuál de los siguientes es un ejemplo de herramienta de Internet utilizada para acceder a información en la <em>web?</em>',
           imagen: require('@/assets/actividad/imagen2.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto: 'Navegador <em>web.</em>',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Sistema operativo.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Disco duro.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Memoria RAM.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
+          texto:
+            '¿Cuál de los siguientes elementos forma parte de los componentes físicos de Internet?',
           imagen: require('@/assets/actividad/imagen3.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'Protocolos de comunicación.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Lenguajes de programación.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
+              texto: 'Servidores y <em>routers.</em>',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Direcciones URL.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 4,
           texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
+            '¿Qué elemento lógico permite identificar la ubicación de un recurso en la <em>web?</em>',
           imagen: require('@/assets/actividad/imagen4.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto: 'URL',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: '<em>Router</em>',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Cable de red',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Tarjeta gráfica',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
-          imagen: require('@/assets/actividad/imagen1.png'),
+          texto: '¿Cuál es un ejemplo de conectividad utilizada en redes?',
+          imagen: require('@/assets/actividad/imagen5.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'HTML',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'SQL',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'JSON',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
+              texto: 'Fibra óptica',
+              esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 6,
           texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
-          imagen: require('@/assets/actividad/imagen2.png'),
+            '¿Cuál de los siguientes lenguajes se utiliza comúnmente para el desarrollo <em>web</em> del lado del cliente?',
+          imagen: require('@/assets/actividad/imagen6.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto: 'JavaScript',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'C',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Assembly',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'COBOL',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 7,
-          texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
-          imagen: require('@/assets/actividad/imagen3.png'),
+          texto: '¿Qué representa un tipo de dato en programación?',
+          imagen: require('@/assets/actividad/imagen7.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
+              texto: 'Un método de conexión a Internet.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto:
+                'Una categoría de información que puede almacenar una variable.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Un tipo de servidor.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Un lenguaje de programación.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 8,
           texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
-          imagen: require('@/assets/actividad/imagen4.png'),
+            '¿Cuál es el propósito de una estructura de selección en programación?',
+          imagen: require('@/assets/actividad/imagen8.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'Repetir una acción indefinidamente.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Guardar información en una base de datos.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Conectar sistemas en red.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
+              texto:
+                'Ejecutar instrucciones según el cumplimiento de una condición.',
+              esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 9,
-          texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
+          texto: '¿Qué permiten las estructuras de repetición en programación?',
+          imagen: require('@/assets/actividad/imagen9.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Ejecutar instrucciones varias veces mientras se cumpla una condición.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Diseñar páginas <em>web.</em>',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Conectar bases de datos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Crear direcciones IP.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 10,
+          texto: '¿Qué es una función en programación?',
+          imagen: require('@/assets/actividad/imagen10.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Un tipo de servidor.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Un bloque de código que realiza una tarea específica.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Un sistema operativo.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Un dispositivo de red.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 11,
+          texto: '¿Qué describe la arquitectura orientada a servicios (SOA)?',
           imagen: require('@/assets/actividad/imagen1.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Un sistema operativo para servidores.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Un lenguaje de programación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Un modelo basado en servicios que se comunican entre sí.',
               esCorrecta: true,
             },
+            {
+              id: 'd',
+              texto: 'Un tipo de base de datos.',
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
-          id: 10,
+          id: 12,
           texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
+            '¿Cuál es una característica de los servicios <em>web</em> SOAP?',
           imagen: require('@/assets/actividad/imagen2.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto:
+                'Utilizan exclusivamente el formato XML para el intercambio de datos.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Funcionan solo en redes locales.',
               esCorrecta: false,
             },
+            {
+              id: 'c',
+              texto: 'No requieren protocolos de comunicación.',
+              esCorrecta: false,
+            },
+            { id: 'd', texto: 'No utilizan Internet.', esCorrecta: false },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
-          id: 11,
+          id: 13,
           texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
+            '¿Cuál es una característica principal de los servicios <em>web</em> REST?',
           imagen: require('@/assets/actividad/imagen3.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Solo funcionan con XML.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'No utilizan direcciones URL.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Solo se ejecutan en sistemas locales.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Utilizan operaciones basadas en HTTP para acceder a recursos.',
               esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
-          id: 12,
-          texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
+          id: 14,
+          texto: '¿Qué es una API?',
           imagen: require('@/assets/actividad/imagen4.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'Falso',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 13,
-          texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
-          imagen: require('@/assets/actividad/imagen1.png'),
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'Falso',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 14,
-          texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
-          imagen: require('@/assets/actividad/imagen2.png'),
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'Verdadero',
+              texto: 'Un sistema operativo para servidores.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto:
+                'Un conjunto de reglas que permite la comunicación entre aplicaciones.',
               esCorrecta: true,
             },
+            {
+              id: 'c',
+              texto: 'Un lenguaje de programación.',
+              esCorrecta: false,
+            },
+            { id: 'd', texto: 'Un tipo de navegador.', esCorrecta: false },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 15,
-          texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
-          imagen: require('@/assets/actividad/imagen3.png'),
+          texto: '¿Qué permite un entorno de desarrollo integrado (IDE)?',
+          imagen: require('@/assets/actividad/imagen5.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Ejecutar redes de comunicación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Reemplazar bases de datos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Desarrollar, editar y depurar código en un mismo entorno.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Administrar <em>hardware.</em>',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 16,
+          texto: '¿Qué representa un <em>endpoint</em> en una API?',
+          imagen: require('@/assets/actividad/imagen6.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Un dispositivo de red.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Una dirección o ruta donde se accede a un recurso de la API.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Un tipo de base de datos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Un lenguaje de programación.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 17,
+          texto:
+            '¿Qué tipo de prueba verifica que cada componente del sistema funcione correctamente de manera individual?',
+          imagen: require('@/assets/actividad/imagen7.png'),
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: 'Prueba de integración.', esCorrecta: false },
+            {
+              id: 'b',
+              texto: 'Prueba de rendimiento.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Prueba de seguridad.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Prueba unitaria.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 18,
+          texto: '¿Qué evalúan las pruebas de integración?',
+          imagen: require('@/assets/actividad/imagen8.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'La interacción entre diferentes componentes del sistema.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'El rendimiento del <em>hardware.</em>',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'El diseño de interfaces.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'La velocidad de Internet.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 19,
+          texto: '¿Cuál es el objetivo de las pruebas de seguridad en una API?',
+          imagen: require('@/assets/actividad/imagen9.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Aumentar la velocidad de la red.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Identificar vulnerabilidades y proteger los datos.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Mejorar el diseño visual de la aplicación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Reducir el tamaño del código.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 20,
+          texto: '¿Qué buscan las pruebas de rendimiento en una API?',
+          imagen: require('@/assets/actividad/imagen10.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Cambiar el lenguaje de programación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Diseñar interfaces gráficas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Crear nuevas bases de datos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Medir la velocidad, capacidad de respuesta y comportamiento bajo carga.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto:
+            '¡Excelente trabajo! Se evidencia un buen dominio de los conceptos relacionados con los fundamentos de Internet, la programación para el desarrollo <em>web</em>, la arquitectura orientada a servicios y la construcción de APIs.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
       ],
-      mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
+      mensaje_final_aprobado:
+        'Ha superado la actividad y demuestra sólidos conocimientos sobre el componente formativo.',
       mensaje_final_reprobado:
-        'Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
+        'No ha superado la actividad. Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
     },
   }),
 }
