@@ -93,9 +93,12 @@
                       | para tablas.
               p Para complementar la estructura definida por HTML se utiliza CSS (Cascading Style Sheets), un lenguaje de estilo que permite definir la presentación visual de los elementos.
               p CSS permite controlar aspectos como:
-              .row.justify-content-center.align-items-stretch.mb-4.g-0
-                .col-lg-8.col-12.order-lg-2.order-2
-                  .cajon.C09.px-4.py-3.h-100.w-100
+              .box___style_3(data-aos="zoom-in").mb-4
+                .row.align-items-center
+                  .col-xl-auto.d-none.d-lg-block
+                    figure
+                      img(src='@/assets/curso/tema2/img-03.svg', alt='').m-auto
+                  .col-xl.fit___box_container
                     ul.lista-ul.mb-0
                       li.mb-0
                         i.lista-ul__vineta
@@ -109,9 +112,6 @@
                       li.mb-0
                         i.lista-ul__vineta
                         p Diseño de la página mediante modelos como #[i flexbox] o #[i grid].
-                .col-lg-4.col-8.col-md-6.order-lg-1.order-1.mb-lg-0.mb-4.d-none.d-lg-block
-                  figure
-                    img(src='@/assets/curso/tema2/img-03.svg', alt='Imagen decorativa')
               p.mb-0 La combinación de HTML para la estructura y CSS para la presentación constituye la base de la interfaz visual de cualquier sitio #[i web].
 
       .row(titulo="b) JavaScript")
@@ -163,10 +163,13 @@
           p Es un lenguaje de programación de propósito general ampliamente utilizado en desarrollo #[i web], ciencia de datos, automatización y desarrollo de #[i software].
           p Se caracteriza por su sintaxis clara y legible, lo que facilita la comprensión del código y el trabajo colaborativo entre desarrolladores. Entre los #[i frameworks] más utilizados para desarrollo #[i web] se encuentran:
           .row.justify-content-center
-            .col-lg-10.col-12
-              .row.justify-content-center.align-items-stretch.mb-4.g-0
-                .col-lg-8.col-12.order-lg-2.order-2
-                  .cajon.C09.px-4.py-3.h-100.w-100
+            .col-lg-10  
+              .box___style_3.mb-3
+                .row.align-items-center
+                  .col-xl-auto.d-none.d-lg-block
+                    figure
+                      img(src='@/assets/curso/tema2/img-07.svg', alt='').m-auto
+                  .col-xl.fit___box_container
                     ul.lista-ul.mb-0
                       li.mb-0
                         i.lista-ul__vineta
@@ -177,10 +180,7 @@
                       li.mb-0
                         i.lista-ul__vineta
                         p #[b Pyramid,] #[i framework] adaptable a proyectos de distintos tamaños.
-                .col-lg-4.col-8.col-md-6.order-lg-1.order-1.mb-lg-0.mb-4.d-none.d-lg-block
-                  figure
-                    img(src='@/assets/curso/tema2/img-07.svg', alt='Imagen decorativa')
-              p.text-center.mb-0 Python permite desarrollar aplicaciones #[i web] escalables y eficientes, por lo que es ampliamente utilizado en plataformas digitales y servicios en la nube.
+          p.text-center.mb-0 Python permite desarrollar aplicaciones #[i web] escalables y eficientes, por lo que es ampliamente utilizado en plataformas digitales y servicios en la nube.
       .row(titulo="d) PHP (Hypertext Preprocessor)")
         .col-12.mb-0.mb-md-0
           p Es un lenguaje de programación ampliamente utilizado para el desarrollo de aplicaciones #[i web] del lado del servidor.
@@ -252,10 +252,13 @@
           p Es un lenguaje de programación robusto y altamente escalable utilizado en aplicaciones empresariales y sistemas de gran tamaño.
           p En el desarrollo #[i web] se emplea principalmente para construir aplicaciones #[i backend] que requieren alta estabilidad y capacidad de procesamiento. Entre sus #[i frameworks] más utilizados se encuentran:
           .row.justify-content-center
-            .col-lg-10.col-12
-              .row.justify-content-center.align-items-stretch.mb-4.g-0
-                .col-lg-8.col-12.order-lg-2.order-2
-                  .cajon.C09.px-4.py-3.h-100.w-100
+            .col-lg-10  
+              .box___style_3.mb-3
+                .row.align-items-center
+                  .col-xl-auto.d-none.d-lg-block
+                    figure
+                      img(src='@/assets/curso/tema2/img-14.svg', alt='').m-auto
+                  .col-xl.fit___box_container
                     ul.lista-ul.mb-0
                       li.mb-0
                         i.lista-ul__vineta
@@ -263,10 +266,7 @@
                       li.mb-0
                         i.lista-ul__vineta
                         p #[b JavaServer Faces (JSF),] #[i framework] para el desarrollo de interfaces #[i web] basadas en componentes.
-                .col-lg-4.col-8.col-md-6.order-lg-1.order-1.mb-lg-0.mb-4.d-none.d-lg-block
-                  figure
-                    img(src='@/assets/curso/tema2/img-14.svg', alt='Imagen decorativa')
-              p.text-center.mb-0 Java destaca por su portabilidad, seguridad y capacidad para manejar aplicaciones de gran escala.
+          p.text-center.mb-0 Java destaca por su portabilidad, seguridad y capacidad para manejar aplicaciones de gran escala.
 
     p.mb-4 La diversidad de lenguajes y tecnologías utilizadas en el desarrollo #[i web] responde a los diferentes roles que cada uno cumple dentro de una aplicación. Mientras algunos se orientan a la estructura y presentación de la interfaz, otros se enfocan en la lógica de interacción o en el procesamiento de datos en el servidor. A continuación, se presenta un panorama general de algunas tecnologías ampliamente utilizadas en el desarrollo #[i web] y sus principales funciones.
 
@@ -279,7 +279,7 @@
           table
             thead
               tr(data-aos="fade-right")
-                th(style="width: 5%; background-color: #FFF7DF;") Tecnología
+                th(style="width: 10%; background-color: #FFF7DF;") Tecnología
                 th(style="width: 20%; background-color: #FFF7DF;") Rol principal
                 th(style="width: 20%; background-color: #FFF7DF;") Ejemplos o #[i frameworks] asociados
             tbody
@@ -301,8 +301,8 @@
                 td Laravel, Symfony y CodeIgniter
               tr(data-aos="fade-right")
                 td.text-center(style="background-color: #F0F8FF;") Ruby
-                td.text-center(style="background-color: #F0F8FF;") Desarrollo #[i web] orientado a productividad.
-                td.text-center(style="background-color: #F0F8FF;") Ruby on Rails y Sinatra
+                td(style="background-color: #F0F8FF;") Desarrollo #[i web] orientado a productividad.
+                td(style="background-color: #F0F8FF;") Ruby on Rails y Sinatra
               tr(data-aos="fade-right")
                 td.text-center Java
                 td Aplicaciones empresariales y #[i backend] robusto.
@@ -318,14 +318,16 @@
 
     p.mb-4 Toda aplicación informática necesita representar información y operar sobre ella. Para lograrlo, los lenguajes de programación utilizan tipos de datos, que definen la naturaleza de los valores que se almacenan, y estructuras de programación, que permiten organizar y manipular conjuntos de datos de manera eficiente.
 
-    .row.justify-content-center.align-items-stretch.mb-4.g-0
-      .col-lg-6.col-12.order-lg-2.order-2
-        .cajon.C05.px-4.py-3.h-100.w-100
-          p Esta distinción es fundamental en el desarrollo de aplicaciones #[i web] y servicios digitales, ya que facilita el modelado de entidades, la organización de la información y la transmisión de datos entre sistemas mediante formatos como JSON o XML.
-          p.mb-0 Los #[b tipos de datos] representan la forma en que se almacena y manipula la información dentro de un programa. Cada tipo establece qué clase de valores puede contener una variable y qué operaciones se pueden realizar sobre dichos valores.
-      .col-lg-4.col-8.col-md-6.order-lg-1.order-1.mb-lg-0.mb-4.d-none.d-lg-block
-        figure
-          img(src='@/assets/curso/tema2/img-26.svg', alt='Imagen decorativa')
+    .row.justify-content-center
+      .col-lg-10
+        .box___style_4(data-aos="zoom-in").mb-4
+          .row.align-items-center
+            .col-xl-auto.d-none.d-lg-block
+              figure
+                img(src='@/assets/curso/tema2/img-26.svg', alt='').m-auto
+            .col-xl.fit___box_container
+              p Esta distinción es fundamental en el desarrollo de aplicaciones #[i web] y servicios digitales, ya que facilita el modelado de entidades, la organización de la información y la transmisión de datos entre sistemas mediante formatos como JSON o XML.
+              p.mb-0 Los #[b tipos de datos] representan la forma en que se almacena y manipula la información dentro de un programa. Cada tipo establece qué clase de valores puede contener una variable y qué operaciones se pueden realizar sobre dichos valores.
 
     .row.justify-content-center.align-items-center.mb-4
       .col-lg-10
@@ -432,14 +434,16 @@
 
     p.mb-4 En programación, las estructuras de control permiten definir el flujo de ejecución de un programa. Estas estructuras determinan el orden en que se ejecutan las instrucciones y permiten que el sistema tome decisiones o repita acciones según determinadas condiciones.
 
-    .row.justify-content-center.align-items-stretch.mb-4.g-0
-      .col-lg-6.col-12.order-lg-2.order-2
-        .cajon.C02.px-4.py-3.h-100.w-100
-          p Existen dos tipos principales de estructuras de control utilizadas en la mayoría de lenguajes de programación: estructuras de selección, que permiten elegir entre diferentes caminos de ejecución, y estructuras de repetición, que permiten ejecutar un conjunto de instrucciones varias veces.
-          p.mb-0 Las #[b estructuras de selección], también llamadas estructuras condicionales, permiten que el programa evalúe una condición y determine qué conjunto de instrucciones debe ejecutarse.
-      .col-lg-4.col-8.col-md-6.order-lg-1.order-1.mb-lg-0.mb-4.d-none.d-lg-block
-        figure
-          img(src='@/assets/curso/tema2/img-18.png', alt='Imagen decorativa')
+    .row.justify-content-center
+      .col-lg-10
+        .box___style_5(data-aos="zoom-in").mb-4
+          .row.align-items-center
+            .col-xl-auto.d-none.d-lg-block
+              figure
+                img(src='@/assets/curso/tema2/img-18.png', alt='').m-auto
+            .col-xl.fit___box_container
+              p Existen dos tipos principales de estructuras de control utilizadas en la mayoría de lenguajes de programación: estructuras de selección, que permiten elegir entre diferentes caminos de ejecución, y estructuras de repetición, que permiten ejecutar un conjunto de instrucciones varias veces.
+              p.mb-0 Las #[b estructuras de selección], también llamadas estructuras condicionales, permiten que el programa evalúe una condición y determine qué conjunto de instrucciones debe ejecutarse.
 
     .row.justify-content-center.mb-4(data-aos="fade-left")
       .col-lg-10
@@ -508,13 +512,15 @@
 
     p.mb-4 En el desarrollo de #[i software] y aplicaciones #[i web], la organización del código es un aspecto fundamental para garantizar que los programas sean comprensibles, reutilizables y fáciles de mantener. Para lograrlo, los lenguajes de programación incorporan mecanismos que permiten dividir los programas en unidades lógicas de trabajo, como las funciones, los procedimientos y las estructuras propias de la programación orientada a objetos, como las clases y los objetos.
 
-    .row.justify-content-center.align-items-stretch.mb-4.g-0
-      .col-lg-7.col-12.order-lg-2.order-2
-        .cajon.C07.px-4.py-4.h-100.w-100
-          p.mb-0 Las funciones y los procedimientos permiten encapsular instrucciones que realizan tareas específicas dentro de un programa. Esta modularización facilita la reutilización del código, evita la repetición innecesaria de instrucciones y permite estructurar los programas de manera más clara.
-      .col-lg-3.col-8.col-md-6.order-lg-1.order-1.mb-lg-0.mb-4.d-none.d-lg-block
-        figure
-          img(src='@/assets/curso/tema2/img-20.svg', alt='Imagen decorativa')
+    .row.justify-content-center
+      .col-lg-10
+        .box___style_6(data-aos="zoom-in").mb-4
+          .row.align-items-center
+            .col-xl-auto.d-none.d-lg-block
+              figure
+                img(src='@/assets/curso/tema2/img-20.svg', alt='').m-auto
+            .col-xl.fit___box_container
+              p.mb-0 Las funciones y los procedimientos permiten encapsular instrucciones que realizan tareas específicas dentro de un programa. Esta modularización facilita la reutilización del código, evita la repetición innecesaria de instrucciones y permite estructurar los programas de manera más clara.
 
     .row.justify-content-center.align-items-center
       .col-lg-10

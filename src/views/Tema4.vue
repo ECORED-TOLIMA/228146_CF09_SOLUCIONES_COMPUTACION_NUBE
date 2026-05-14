@@ -165,7 +165,7 @@
     .row.justify-content-center(data-aos="fade-left")
       .col-lg-10
         .titulo-sexto.color-acento-contenido(data-aos="fade-right")
-          h5 Tabla 6.
+          h5 Tabla 9.
           span Comparativa de requerimientos según el nivel de uso
         .tabla-a.color-acento-contenido.mb-4
           table
@@ -394,7 +394,7 @@
               img(src='@/assets/curso/ico.svg', style="width: 55px" ,alt='').m-auto
           .col-lg-auto.col-9.titulo01(style="z-index:1")
             .p-2
-              h3.mb-0.ms-2 Elementos de la respuesta del servidor
+              h3.mb-0.ms-2 Métodos de autenticación en APIs REST
     
         p.mb-4 Para proteger la información y garantizar que solo los usuarios autorizados puedan acceder a los recursos, las APIs REST utilizan diferentes mecanismos de autenticación.
 

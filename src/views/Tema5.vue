@@ -9,14 +9,13 @@
 
     p.mb-4 Las pruebas de #[i software] constituyen una etapa fundamental dentro del proceso de desarrollo de aplicaciones y servicios digitales. En el caso de las APIs, las pruebas permiten verificar que los servicios expuestos funcionen correctamente, respondan de forma consistente a las solicitudes de los clientes y manejen adecuadamente situaciones de error.
 
-    .row.justify-content-center.align-items-stretch.mb-4.g-0
-      .col-lg-6.col-12.order-lg-1.order-2
-        .cajon.C02.p-4.h-100.w-100
-          p Una API actúa como un punto de comunicación entre diferentes sistemas o aplicaciones. Por esta razón, cualquier fallo en su funcionamiento puede afectar múltiples componentes de un sistema o incluso a aplicaciones externas que dependen de ella. Las pruebas permiten detectar estos problemas antes de que el servicio sea puesto en producción, reduciendo riesgos operativos y mejorando la calidad del #[i software].
-          p.mb-0 En el desarrollo de APIs, las pruebas se enfocan en validar distintos aspectos del servicio, como el correcto procesamiento de solicitudes, la precisión de las respuestas generadas por el servidor, el cumplimiento de los contratos definidos en la documentación de la API y la seguridad en el acceso a los recursos.
-      .col-lg-4.col-8.col-md-6.order-lg-2.order-1.mb-lg-0.mb-4.d-none.d-lg-block
-        figure
-          img(src='@/assets/curso/tema5/img-01.svg', alt='Imagen decorativa')
+    .row.justify-content-center.align-items-stretch.mb-4.g-0(data-aos="fade-right")
+      .col-lg-6.col-12.cajon.C02.d-flex.flex-column.align-items-start.p-4.p-lg-5.cajon-responsive
+        p Una API actúa como un punto de comunicación entre diferentes sistemas o aplicaciones. Por esta razón, cualquier fallo en su funcionamiento puede afectar múltiples componentes de un sistema o incluso a aplicaciones externas que dependen de ella. Las pruebas permiten detectar estos problemas antes de que el servicio sea puesto en producción, reduciendo riesgos operativos y mejorando la calidad del #[i software]. 
+        p.mb-0 En el desarrollo de APIs, las pruebas se enfocan en validar distintos aspectos del servicio, como el correcto procesamiento de solicitudes, la precisión de las respuestas generadas por el servidor, el cumplimiento de los contratos definidos en la documentación de la API y la seguridad en el acceso a los recursos.
+      .col-lg-4.d-flex.ocultar-img-responsive
+        figure.mb-0.w-100
+          img.h-100.w-100(src='@/assets/curso/tema5/img-01.svg', alt='', style="object-fit: cover;")   
 
     .row.justify-content-center.mb-4(data-aos="fade-right")
       .col-lg-10.col-12

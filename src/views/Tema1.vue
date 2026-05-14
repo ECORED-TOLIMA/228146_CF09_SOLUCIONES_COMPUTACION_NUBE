@@ -66,14 +66,16 @@
 
     p.mb-4 Internet es una red global de redes que permite la interconexión de millones de dispositivos alrededor del mundo para el intercambio de información y la prestación de diversos servicios digitales. Su funcionamiento se basa en infraestructuras tecnológicas, protocolos de comunicación y servicios que facilitan la transmisión de datos entre sistemas conectados.
 
-    .row.justify-content-center.align-items-stretch.mb-4.g-0
-      .col-lg-7.col-12.order-lg-2.order-2
-        .cajon.C01.px-4.py-3.h-100.w-100
-          p Esta red utiliza principalmente el conjunto de protocolos TCP/IP, que establece las reglas para la transmisión de datos entre dispositivos. Gracias a estos protocolos, la información se divide en paquetes que pueden viajar por diferentes rutas dentro de la red hasta llegar a su destino final, donde son reorganizados para reconstruir el mensaje original.
-          p En el contexto del desarrollo #[i web], Internet constituye la infraestructura sobre la cual operan las aplicaciones, los servicios digitales y las Interfaces de Programación de Aplicaciones (API).
-      .col-lg-3.col-8.col-md-6.order-lg-1.order-1.mb-lg-0.mb-4.d-none.d-lg-block
-        figure
-          img(src='@/assets/curso/tema1/img-06.svg', alt='Imagen decorativa')
+    .row.justify-content-center
+      .col-lg-10
+        .box___style_2(data-aos="zoom-in").mb-4
+          .row.align-items-center
+            .col-xl-auto.d-none.d-lg-block
+              figure
+                img(src='@/assets/curso/tema1/img-06.svg', alt='').m-auto
+            .col-xl.fit___box_container
+              p Esta red utiliza principalmente el conjunto de protocolos TCP/IP, que establece las reglas para la transmisión de datos entre dispositivos. Gracias a estos protocolos, la información se divide en paquetes que pueden viajar por diferentes rutas dentro de la red hasta llegar a su destino final, donde son reorganizados para reconstruir el mensaje original.
+              p.mb-0 En el contexto del desarrollo #[i web], Internet constituye la infraestructura sobre la cual operan las aplicaciones, los servicios digitales y las Interfaces de Programación de Aplicaciones (API).
 
     .row.justify-content-center.align-items-center.mb-4
       .col-lg-10
@@ -159,7 +161,7 @@
               p Entre sus principales funciones se encuentran el enrutamiento de paquetes de datos mediante tablas de rutas, la asignación de direcciones IP a los dispositivos conectados a la red mediante protocolos como DHCP y la implementación de mecanismos básicos de seguridad, como la traducción de direcciones de red (NAT) o #[i firewalls] integrados.
             li.mb-0
               i.lista-ul__vineta
-              p Existen diferentes tipos de #[i routers] según su uso y capacidad. Los #[i core routers] son utilizados por proveedores de servicios de Internet en el núcleo de la red para gestionar grandes volúmenes de tráfico. Los #[i edge routers] se ubican en los límites de las redes organizacionales para conectar con otras redes externas. Por su parte, los #[i routers] SOHO (Small Office/Home Office) son los dispositivos comunes en hogares y pequeñas oficinas, donde integran funciones de #[i router], #[i switch] y punto de acceso inalámbrico.
+              p Existen diferentes tipos de #[i routers] según su uso y capacidad. Los #[b #[i core routers]] son utilizados por proveedores de servicios de Internet en el núcleo de la red para gestionar grandes volúmenes de tráfico. Los #[b #[i edge routers]] se ubican en los límites de las redes organizacionales para conectar con otras redes externas. Por su parte, los #[b #[i routers] SOHO] (Small Office/Home Office) son los dispositivos comunes en hogares y pequeñas oficinas, donde integran funciones de #[i router], #[i switch] y punto de acceso inalámbrico.
         .col-lg-4.col-10.order-lg-2.order-1.mb-lg-0.mb-4
           figure
             img(src='@/assets/curso/tema1/img-18.png', alt='Imagen decorativa')
@@ -306,7 +308,7 @@
                 img(src='@/assets/curso/ico.svg', style="width: 55px" ,alt='').m-auto
             .col-lg-auto.col-9.titulo01(style="z-index:1")
               .p-2
-                h3.mb-0.ms-2 b) Puertos
+                h3.mb-0.ms-2 c) Protocolos de red
 
           ul.lista-ul.mb-4
             li.mb-0
@@ -380,11 +382,11 @@
               .col-8
                 figure.desktop
                   img(src='@/assets/curso/tema1/img-26.png', alt='En la figura 1 se presenta un cable coaxial compuesto por un conductor central rodeado por una capa aislante, una malla metálica de protección y una cubierta exterior protectora.', style="width: 1043px").m-auto
-                  figcaption Referencia Tabla - Norma APA
+                  figcaption Nota. Tomado de Xataka Basics (2026).
               .col-12
                 figure.movil
                   img(src='@/assets/curso/tema1/img-26.png', alt='En la figura 1 se presenta un cable coaxial compuesto por un conductor central rodeado por una capa aislante, una malla metálica de protección y una cubierta exterior protectora.', style="width: 1043px").m-auto
-                  figcaption Referencia Tabla - Norma APA
+                  figcaption Nota. Tomado de Xataka Basics (2026).
           p.mb-0 Este tipo de conexión es ofrecido por los proveedores de servicios de Internet (ISP) y permite una comunicación estable y continua entre los usuarios y la red global. Gracias a su capacidad de transmisión, es adecuada para actividades que requieren alto consumo de datos, como videoconferencias, plataformas en la nube o transmisión de contenidos multimedia.
       .row(titulo="b) Conexiones DSL")
         .col-12.mb-0.mb-md-0
