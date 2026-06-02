@@ -75,9 +75,10 @@
                   h4.text-center Acoplamiento flexible
                   p Las aplicaciones pueden interactuar con los servicios sin conocer los detalles internos de su implementación.
 
+    p.mb-4 En muchas implementaciones de SOA se emplea un bus de servicios empresariales (ESB), que funciona como un componente intermediario encargado de gestionar la comunicación entre los diferentes servicios. Este elemento facilita tareas como el enrutamiento de mensajes, la transformación de datos y la conexión entre aplicaciones dentro de una infraestructura tecnológica.
+
     .row.justify-content-center
       .col-lg-10
-        p.mb-4 En muchas implementaciones de SOA se emplea un bus de servicios empresariales (ESB), que funciona como un componente intermediario encargado de gestionar la comunicación entre los diferentes servicios. Este elemento facilita tareas como el enrutamiento de mensajes, la transformación de datos y la conexión entre aplicaciones dentro de una infraestructura tecnológica.
         .cajon.cajon.C07.p-4(style="border-radius: 50px")
           p.mb-0 Este enfoque permite construir sistemas más flexibles, escalables y fáciles de mantener. A partir de estos principios se desarrollan diferentes tecnologías y protocolos para implementar servicios #[i web], entre los cuales se destacan SOAP y REST.
 
@@ -213,7 +214,7 @@
 
     .row.justify-content-center.mb-4
       .col.col-lg-10.col-12
-        .cajon.cajon.C02.p-3.mb-4
+        .cajon.cajon.C02.p-3
           .row.justify-content-center.align-items-center
             .col.col-lg-6.col-12.order-lg-1.order-2
               p.mb-0(data-aos="fade-down") En este tipo de arquitectura, es común que cada servicio gestione sus propios datos o recursos de almacenamiento. De esta manera, se reduce la dependencia entre componentes y se permite que cada parte del sistema evolucione de forma independiente. Además, en muchos entornos actuales estas soluciones se implementan sobre infraestructuras en la nube, lo que proporciona mayor disponibilidad, flexibilidad y capacidad de crecimiento según las necesidades del sistema.
@@ -221,14 +222,12 @@
               figure
                 img(src='@/assets/curso/tema3/img-18v.svg', alt='Imagen decorativa')
 
-        p Entre los componentes más utilizados en arquitecturas basadas en servicios se encuentran los siguientes:
+    p.mb-4 Entre los componentes más utilizados en arquitecturas basadas en servicios se encuentran los siguientes:
 
     .cajon.cajon.C06.p-5.mb-4
       SlyderB(:datos="datosSlyder")
 
-    .row.justify-content-center(data-aos="fade-right")
-      .col-lg-10.col-12
-        p La integración de estos componentes permite construir sistemas más flexibles, resilientes y preparados para entornos distribuidos, donde múltiples aplicaciones interactúan entre sí mediante servicios #[i web] o APIs.
+    p La integración de estos componentes permite construir sistemas más flexibles, resilientes y preparados para entornos distribuidos, donde múltiples aplicaciones interactúan entre sí mediante servicios #[i web] o APIs.
 
 </template>
 

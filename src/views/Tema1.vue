@@ -77,16 +77,12 @@
               p Esta red utiliza principalmente el conjunto de protocolos TCP/IP, que establece las reglas para la transmisión de datos entre dispositivos. Gracias a estos protocolos, la información se divide en paquetes que pueden viajar por diferentes rutas dentro de la red hasta llegar a su destino final, donde son reorganizados para reconstruir el mensaje original.
               p.mb-0 En el contexto del desarrollo #[i web], Internet constituye la infraestructura sobre la cual operan las aplicaciones, los servicios digitales y las Interfaces de Programación de Aplicaciones (API).
 
-    .row.justify-content-center.align-items-center.mb-4
-      .col-lg-10
-        p Entre los conceptos fundamentales asociados al funcionamiento de Internet se encuentran:
+    p.mb-4 Entre los conceptos fundamentales asociados al funcionamiento de Internet se encuentran:
 
     .cajon.cajon.C06.p-5.mb-4
       SlyderB(:datos="datosSlyder")
 
-    .row.justify-content-center.align-items-center    
-      .col-lg-10
-        p En conjunto, estos conceptos permiten comprender el funcionamiento de Internet como infraestructura tecnológica que soporta la comunicación digital. Su conocimiento resulta fundamental para el desarrollo #[i web], ya que las aplicaciones, los servicios en línea y las Interfaces de Programación de Aplicaciones (API) operan sobre esta red global y permiten el intercambio de información entre diferentes sistemas y plataformas.
+    p En conjunto, estos conceptos permiten comprender el funcionamiento de Internet como infraestructura tecnológica que soporta la comunicación digital. Su conocimiento resulta fundamental para el desarrollo #[i web], ya que las aplicaciones, los servicios en línea y las Interfaces de Programación de Aplicaciones (API) operan sobre esta red global y permiten el intercambio de información entre diferentes sistemas y plataformas.
 
     Separador
 
@@ -128,9 +124,7 @@
             h4.text-center DNS (Sistema de Nombres de Dominio)
             p.mb-0(data-aos="fade-down") Sistema que traduce los nombres de dominio utilizados por las personas en direcciones IP numéricas que identifican a los servidores en Internet. Gracias al DNS, los usuarios pueden acceder a los servicios #[i web] mediante nombres fáciles de recordar, en lugar de utilizar direcciones numéricas complejas.
 
-    .row.justify-content-center.align-items-center    
-      .col-lg-10
-        p Estas herramientas permiten el funcionamiento del modelo cliente-servidor característico de la #[i web]. En este modelo, el usuario accede a los servicios mediante un navegador o cliente HTTP, el servidor #[i web] procesa la solicitud y el sistema DNS facilita la localización de los recursos dentro de la infraestructura de Internet.   
+    p Estas herramientas permiten el funcionamiento del modelo cliente-servidor característico de la #[i web]. En este modelo, el usuario accede a los servicios mediante un navegador o cliente HTTP, el servidor #[i web] procesa la solicitud y el sistema DNS facilita la localización de los recursos dentro de la infraestructura de Internet.   
 
     Separador
 
@@ -286,13 +280,13 @@
                   th(style="width: 50%; background-color: #FFF7DF;") Uso habitual
               tbody
                 tr(data-aos="fade-right")
-                  td.text-center(style="background-color: #F0F8FF;") 80
+                  td(style="background-color: #F0F8FF;") 80
                   td(style="background-color: #F0F8FF;") HTTP
                 tr(data-aos="fade-right")
-                  td.text-center 443
+                  td 443
                   td HTTPS
                 tr(data-aos="fade-right")
-                  td.text-center(style="background-color: #F0F8FF;") 3306
+                  td(style="background-color: #F0F8FF;") 3306
                   td(style="background-color: #F0F8FF;") MySQL
           li(data-aos="flip-right") 
             .lista-ol--cuadro__vineta
@@ -334,16 +328,16 @@
                       th(style="width: 50%; background-color: #FFF7DF;") Función principal
                   tbody
                     tr(data-aos="fade-right")
-                      td.text-center(style="background-color: #F0F8FF;") HTTP
+                      td(style="background-color: #F0F8FF;") HTTP
                       td(style="background-color: #F0F8FF;") Transferencia de recursos #[i web].
                     tr(data-aos="fade-right")
-                      td.text-center(style="background-color: #FFFF;")  HTTPS
+                      td(style="background-color: #FFFF;")  HTTPS
                       td(style="background-color: #FFFF;")  Transferencia segura de recursos #[i web].
                     tr(data-aos="fade-right")
-                      td.text-center(style="background-color: #F0F8FF;") TCP/IP
+                      td(style="background-color: #F0F8FF;") TCP/IP
                       td(style="background-color: #F0F8FF;") Base de la comunicación y el direccionamiento en Internet.
                     tr(data-aos="fade-right")
-                      td.text-center(style="background-color: #FFFF;")  FTP
+                      td(style="background-color: #FFFF;")  FTP
                       td(style="background-color: #FFFF;")  Transferencia de archivos.
 
     .row.justify-content-center
@@ -498,32 +492,32 @@
                   th(style="width: 50%; background-color: #FFF7DF;") Medio de transmisión
               tbody
                 tr
-                  td.text-center(style="background-color: #F0F8FF;") DSL
+                  td(style="background-color: #F0F8FF;") DSL
                   td(style="background-color: #F0F8FF;") Media
                   td(style="background-color: #F0F8FF;") Medio
                   td(style="background-color: #F0F8FF;") Línea telefónica
                 tr
-                  td.text-center(style="background-color: #FFFF;") Wi-Fi
+                  td(style="background-color: #FFFF;") Wi-Fi
                   td(style="background-color: #FFFF;") Media
                   td(style="background-color: #FFFF;") Bajo
                   td(style="background-color: #FFFF;") Inalámbrico
                 tr
-                  td.text-center(style="background-color: #F0F8FF;") Banda ancha por cable
+                  td(style="background-color: #F0F8FF;") Banda ancha por cable
                   td(style="background-color: #F0F8FF;") Alta
                   td(style="background-color: #F0F8FF;") Medio
                   td(style="background-color: #F0F8FF;") Cable coaxial
                 tr
-                  td.text-center(style="background-color: #FFFF;") Fibra óptica
+                  td(style="background-color: #FFFF;") Fibra óptica
                   td(style="background-color: #FFFF;") Muy alta
                   td(style="background-color: #FFFF;") Alto
                   td(style="background-color: #FFFF;") Fibra óptica
                 tr
-                  td.text-center(style="background-color: #F0F8FF;") Satélite
+                  td(style="background-color: #F0F8FF;") Satélite
                   td(style="background-color: #F0F8FF;") Media
                   td(style="background-color: #F0F8FF;") Muy alto
                   td(style="background-color: #F0F8FF;") Señal satelital
                 tr
-                  td.text-center(style="background-color: #FFFF;") Redes móviles
+                  td(style="background-color: #FFFF;") Redes móviles
                   td(style="background-color: #FFFF;") Media a alta
                   td(style="background-color: #FFFF;") Alto
                   td(style="background-color: #FFFF;") Inalámbrico celular

@@ -16,9 +16,7 @@
       .bloque-texto-g__texto.p-4
         p.mb-0(data-aos="fade-down") Una API, o interfaz de programación de aplicaciones, es un conjunto de reglas, protocolos y definiciones que permite que diferentes aplicaciones de #[i software] se comuniquen entre sí e intercambien información. Actúa como un intermediario que facilita el acceso a determinadas funcionalidades o recursos de un sistema sin que las aplicaciones que la utilizan necesiten conocer los detalles internos de su implementación.
 
-    .row.justify-content-center(data-aos="fade-right")
-      .col-lg-10.col-12
-        p De esta manera, las APIs establecen cómo deben realizarse las solicitudes de información, qué parámetros se deben enviar y qué tipo de respuesta se puede recibir, garantizando una comunicación estructurada y segura entre los distintos componentes de una aplicación o entre sistemas desarrollados por diferentes organizaciones.
+    p De esta manera, las APIs establecen cómo deben realizarse las solicitudes de información, qué parámetros se deben enviar y qué tipo de respuesta se puede recibir, garantizando una comunicación estructurada y segura entre los distintos componentes de una aplicación o entre sistemas desarrollados por diferentes organizaciones.
 
     Separador
 
@@ -176,19 +174,19 @@
                 th(style="width: 20%; background-color: #FFF7DF;") Nivel avanzado o profesional
             tbody
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Memoria RAM.
+                td(style="background-color: #F0F8FF;") Memoria RAM.
                 td(style="background-color: #F0F8FF;") 8 GB.
                 td(style="background-color: #F0F8FF;") 16 GB o más.
               tr(data-aos="fade-right")
-                td.text-center Procesador.
+                td Procesador.
                 td Gama media.
                 td Gama media-alta o superior.
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Almacenamiento.
+                td(style="background-color: #F0F8FF;") Almacenamiento.
                 td(style="background-color: #F0F8FF;") 256 GB SSD.
                 td(style="background-color: #F0F8FF;") 512 GB SSD o más.
               tr(data-aos="fade-right")
-                td.text-center Gráficos.
+                td Gráficos.
                 td Integrados.
                 td Integrados o dedicados según el proyecto.
         
@@ -312,19 +310,19 @@
                       th(style="width: 33%; background-color: #FFF7DF;") Observación
                   tbody
                     tr
-                      td.text-center(style="background-color: #F0F8FF;") GET
+                      td(style="background-color: #F0F8FF;") GET
                       td(style="background-color: #F0F8FF;") Consultar recursos.
                       td(style="background-color: #F0F8FF;") No debe modificar el estado del servidor.
                     tr
-                      td.text-center(style="background-color: #FFFF;") POST
+                      td(style="background-color: #FFFF;") POST
                       td(style="background-color: #FFFF;") Crear recursos.
                       td(style="background-color: #FFFF;") Suele generar nuevos registros.
                     tr
-                      td.text-center(style="background-color: #F0F8FF;") PUT
+                      td(style="background-color: #F0F8FF;") PUT
                       td(style="background-color: #F0F8FF;") Actualizar un recurso completo.
                       td(style="background-color: #F0F8FF;") Es idempotente cuando se usa correctamente.
                     tr
-                      td.text-center(style="background-color: #FFFF;") DELETE
+                      td(style="background-color: #FFFF;") DELETE
                       td(style="background-color: #FFFF;") Eliminar recursos.
                       td(style="background-color: #FFFF;") Debe validarse mediante autenticación.
           .row(titulo="c) Encabezados de la solicitud")
@@ -411,16 +409,16 @@
                   th(style="width: 50%; background-color: #FFF7DF;") Descripción
               tbody
                 tr(data-aos="fade-right")
-                  td.text-center(style="background-color: #F0F8FF;") Básica
+                  td(style="background-color: #F0F8FF;") Básica
                   td(style="background-color: #F0F8FF;") Envía usuario y contraseña codificados en el encabezado de la solicitud.
                 tr(data-aos="fade-right")
-                  td.text-center(style="background-color: #FFFF;") Bearer #[i Token]
+                  td(style="background-color: #FFFF;") Bearer #[i Token]
                   td(style="background-color: #FFFF;") Utiliza un token generado por el servidor para autorizar el acceso.
                 tr(data-aos="fade-right")
-                  td.text-center(style="background-color: #F0F8FF;") API Key
+                  td(style="background-color: #F0F8FF;") API Key
                   td(style="background-color: #F0F8FF;") Asigna una clave única al cliente para validar el acceso a los recursos.
                 tr(data-aos="fade-right")
-                  td.text-center(style="background-color: #FFFF;") OAuth
+                  td(style="background-color: #FFFF;") OAuth
                   td(style="background-color: #FFFF;") Sistema de autenticación y autorización más robusto basado en #[i tokens].
 
       .row.justify-content-center
@@ -498,16 +496,16 @@
                 th(style="width: 50%; background-color: #FFF7DF;") Finalidad
             tbody
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Migración estructural
+                td(style="background-color: #F0F8FF;") Migración estructural
                 td(style="background-color: #F0F8FF;") Aplicar cambios controlados en el esquema de la base de datos.
               tr(data-aos="fade-right")
-                td.text-center ETL
+                td ETL
                 td Extraer, transformar y cargar datos entre sistemas o motores de base de datos.
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") CDC
+                td(style="background-color: #F0F8FF;") CDC
                 td(style="background-color: #F0F8FF;") Replicar cambios en tiempo casi real para mantener la consistencia de la información.
               tr(data-aos="fade-right")
-                td.text-center Sincronización por APIs
+                td Sincronización por APIs
                 td Intercambiar datos entre aplicaciones o plataformas externas.
 
         .cajon.cajon.C01.color-primario.p-4
@@ -612,16 +610,16 @@
                 th(style="width: 50%; background-color: #FFF7DF;") Descripción
             tbody
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Productividad.
+                td(style="background-color: #F0F8FF;") Productividad.
                 td(style="background-color: #F0F8FF;") Reduce la cantidad de código repetitivo necesario para interactuar con la base de datos.
               tr(data-aos="fade-right")
-                td.text-center Seguridad.
+                td Seguridad.
                 td Disminuye el riesgo de ataques de inyección SQL mediante consultas parametrizadas.
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Portabilidad.
+                td(style="background-color: #F0F8FF;") Portabilidad.
                 td(style="background-color: #F0F8FF;") Facilita el cambio de motor de base de datos con ajustes mínimos en el código.
               tr(data-aos="fade-right")
-                td.text-center Rendimiento.
+                td Rendimiento.
                 td En consultas muy complejas puede resultar menos eficiente que escribir SQL optimizado manualmente.
 
       .row.justify-content-center

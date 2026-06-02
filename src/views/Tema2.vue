@@ -284,27 +284,27 @@
                 th(style="width: 20%; background-color: #FFF7DF;") Ejemplos o #[i frameworks] asociados
             tbody
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") HTML/CSS
+                td(style="background-color: #F0F8FF;") HTML/CSS
                 td(style="background-color: #F0F8FF;") Estructura y presentación de la interfaz.
                 td(style="background-color: #F0F8FF;") HTML5, CSS3, #[i Flexbox] y #[i Grid]
               tr(data-aos="fade-right")
-                td.text-center JavaScript
+                td JavaScript
                 td Interactividad en cliente y servidor.
                 td React, Angular y Node.js
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Python
+                td(style="background-color: #F0F8FF;") Python
                 td(style="background-color: #F0F8FF;") #[i Backend] y automatización.
                 td(style="background-color: #F0F8FF;") Django, Flask y Pyramid
               tr(data-aos="fade-right")
-                td.text-center PHP
+                td PHP
                 td #[i Backend] #[i web] y generación dinámica.
                 td Laravel, Symfony y CodeIgniter
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Ruby
+                td(style="background-color: #F0F8FF;") Ruby
                 td(style="background-color: #F0F8FF;") Desarrollo #[i web] orientado a productividad.
                 td(style="background-color: #F0F8FF;") Ruby on Rails y Sinatra
               tr(data-aos="fade-right")
-                td.text-center Java
+                td Java
                 td Aplicaciones empresariales y #[i backend] robusto.
                 td Spring y JSF
 
@@ -343,19 +343,19 @@
                 th(style="width: 10%; background-color: #FFF7DF;") Ejemplo
             tbody
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Numérico
+                td(style="background-color: #F0F8FF;") Numérico
                 td(style="background-color: #F0F8FF;") Representa números enteros o decimales utilizados en operaciones matemáticas.
                 td(style="background-color: #F0F8FF;") 10, 25.5
               tr(data-aos="fade-right")
-                td.text-center Cadena de texto
+                td Cadena de texto
                 td Representa caracteres, palabras o frases.
                 td "Hola mundo"
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Booleano
+                td(style="background-color: #F0F8FF;") Booleano
                 td(style="background-color: #F0F8FF;") Representa valores lógicos utilizados en decisiones del programa.
                 td(style="background-color: #F0F8FF;") Verdadero / Falso
               tr(data-aos="fade-right")
-                td.text-center Fecha/Hora
+                td Fecha/Hora
                 td Representa información temporal como fechas o momentos específicos.
                 td 2026-04-08
 
@@ -385,15 +385,15 @@
                 th(style="width: 10%; background-color: #FFF7DF;") Ejemplo conceptual
             tbody
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Estructuras simples.
+                td(style="background-color: #F0F8FF;") Estructuras simples.
                 td(style="background-color: #F0F8FF;") Almacenan un solo valor.
                 td(style="background-color: #F0F8FF;") Un número o un texto
               tr(data-aos="fade-right")
-                td.text-center Listas o arreglos.
+                td Listas o arreglos.
                 td Colección ordenada de elementos del mismo tipo.
                 td [1, 2, 3, 4]
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Registros o estructuras clave-valor.
+                td(style="background-color: #F0F8FF;") Registros o estructuras clave-valor.
                 td(style="background-color: #F0F8FF;") Permiten asociar valores a identificadores.
                 td(style="background-color: #F0F8FF;") Nombre → "Juan"
 
@@ -459,15 +459,15 @@
                 th(style="width: 10%; background-color: #FFF7DF;") Uso común
             tbody
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") #[i if]
+                td(style="background-color: #F0F8FF;") #[i if]
                 td(style="background-color: #F0F8FF;") Ejecuta un bloque de instrucciones únicamente si la condición evaluada es verdadera.
                 td(style="background-color: #F0F8FF;") Validaciones simples.
               tr(data-aos="fade-right")
-                td.text-center #[i if – else]
+                td #[i if – else]
                 td Permite ejecutar un bloque cuando la condición es verdadera y otro cuando es falsa.
                 td Toma de decisiones binarias.
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") #[i switch / case]
+                td(style="background-color: #F0F8FF;") #[i switch / case]
                 td(style="background-color: #F0F8FF;") Evalúa una variable y permite seleccionar entre múltiples opciones posibles.
                 td(style="background-color: #F0F8FF;") Menús o múltiples condiciones.
 
@@ -487,15 +487,15 @@
                 th(style="width: 10%; background-color: #FFF7DF;") Uso común
             tbody
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") #[i while]
+                td(style="background-color: #F0F8FF;") #[i while]
                 td(style="background-color: #F0F8FF;") Evalúa la condición antes de ejecutar el bloque de instrucciones. El ciclo continúa mientras la condición sea verdadera.
                 td(style="background-color: #F0F8FF;") Procesos cuya repetición depende de una condición.
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #FFFF;") #[i do – while]
+                tdr(style="background-color: #FFFF;") #[i do – while]
                 td(style="background-color: #FFFF;") Ejecuta el bloque de instrucciones al menos una vez y luego evalúa la condición.
                 td(style="background-color: #FFFF;") Procesos que requieren ejecutarse mínimo una vez.
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") #[i for]
+                td(style="background-color: #F0F8FF;") #[i for]
                 td(style="background-color: #F0F8FF;") Se utiliza cuando se conoce previamente el número de iteraciones. Incluye inicialización, condición y actualización.
                 td(style="background-color: #F0F8FF;") Recorrer listas o arreglos.
       .col.col-lg-2.col-8.col-md-6.order-lg-2.order-1.mb-lg-0.mb-3.d-none.d-lg-block
@@ -574,9 +574,7 @@
       .bloque-texto-g__texto.p-4
         p En el caso de la programación orientada a objetos, la clase define la estructura general de una entidad, mientras que el objeto representa una instancia específica creada a partir de esa estructura. Por ejemplo, una clase puede definir las características de un vehículo, mientras que un objeto representaría un vehículo particular con atributos como color, marca o modelo.
 
-    .row.justify-content-center.align-items-center
-      .col-lg-10
-        p El uso de funciones, procedimientos, clases y objetos contribuye a mejorar la organización del código, facilita el mantenimiento del #[i software] y promueve la reutilización de componentes en el desarrollo de aplicaciones #[i web].
+    p El uso de funciones, procedimientos, clases y objetos contribuye a mejorar la organización del código, facilita el mantenimiento del #[i software] y promueve la reutilización de componentes en el desarrollo de aplicaciones #[i web].
 
 
 </template>

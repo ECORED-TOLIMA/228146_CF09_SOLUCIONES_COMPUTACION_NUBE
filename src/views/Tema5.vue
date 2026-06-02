@@ -198,25 +198,25 @@
                 th(style="width: 50%; background-color: #FFF7DF;") Finalidad principal
             tbody
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Funcional
+                td(style="background-color: #F0F8FF;") Funcional
                 td(style="background-color: #F0F8FF;") Verificar que los #[i endpoints] respondan de acuerdo con la especificación.
               tr(data-aos="fade-right")
-                td.text-center Seguridad
+                td Seguridad
                 td Detectar vulnerabilidades en autenticación, autorización y manejo de datos.
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Rendimiento
+                td(style="background-color: #F0F8FF;") Rendimiento
                 td(style="background-color: #F0F8FF;") Evaluar la velocidad y capacidad de respuesta del servicio.
               tr(data-aos="fade-right")
-                td.text-center Carga / estrés
+                td Carga / estrés
                 td Medir el comportamiento bajo diferentes niveles de tráfico.
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Integración
+                td(style="background-color: #F0F8FF;") Integración
                 td(style="background-color: #F0F8FF;") Validar la interacción entre servicios y sistemas externos.
               tr(data-aos="fade-right")
-                td.text-center Regresión
+                td Regresión
                 td Confirmar que cambios recientes no afectaron funcionalidades existentes.
               tr(data-aos="fade-right")
-                td.text-center(style="background-color: #F0F8FF;") Extremo a extremo
+                td(style="background-color: #F0F8FF;") Extremo a extremo
                 td(style="background-color: #F0F8FF;") Evaluar el flujo completo de funcionamiento del sistema.
 
     .row.justify-content-center.mb-4
