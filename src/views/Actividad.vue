@@ -679,6 +679,111 @@ export default {
       mensaje_final_reprobado:
         'No ha superado la actividad. Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
     },
+    observerActividad: null,
+    procesandoActividad: false,
   }),
+  mounted() {
+    this.$nextTick(() => {
+      this.convertirEmActividad()
+
+      const contenedor = document.querySelector('#Actividad')
+
+      if (!contenedor) return
+
+      this.observerActividad = new MutationObserver(() => {
+        if (this.procesandoActividad) return
+
+        this.procesandoActividad = true
+
+        this.$nextTick(() => {
+          this.convertirEmActividad()
+          this.procesandoActividad = false
+        })
+      })
+
+      this.observerActividad.observe(contenedor, {
+        childList: true,
+        subtree: true,
+        characterData: true,
+      })
+    })
+  },
+
+  beforeDestroy() {
+    if (this.observerActividad) {
+      this.observerActividad.disconnect()
+    }
+  },
+
+  methods: {
+    convertirEmActividad() {
+      const contenedor = document.querySelector('#Actividad')
+
+      if (!contenedor) return
+
+      const walker = document.createTreeWalker(
+        contenedor,
+        window.NodeFilter.SHOW_TEXT,
+        {
+          acceptNode(node) {
+            if (!node.nodeValue.includes('<em>')) {
+              return window.NodeFilter.FILTER_REJECT
+            }
+
+            const parent = node.parentNode
+
+            if (!parent) {
+              return window.NodeFilter.FILTER_REJECT
+            }
+
+            const tag = parent.nodeName.toLowerCase()
+
+            if (['script', 'style', 'textarea', 'em'].includes(tag)) {
+              return window.NodeFilter.FILTER_REJECT
+            }
+
+            return window.NodeFilter.FILTER_ACCEPT
+          },
+        },
+      )
+
+      const nodos = []
+
+      while (walker.nextNode()) {
+        nodos.push(walker.currentNode)
+      }
+
+      nodos.forEach(node => {
+        const texto = node.nodeValue
+        const fragmento = document.createDocumentFragment()
+        const regex = /<em>(.*?)<\/em>/g
+
+        let ultimoIndice = 0
+        let coincidencia
+
+        while ((coincidencia = regex.exec(texto)) !== null) {
+          const textoAntes = texto.slice(ultimoIndice, coincidencia.index)
+
+          if (textoAntes) {
+            fragmento.appendChild(document.createTextNode(textoAntes))
+          }
+
+          const em = document.createElement('em')
+          em.textContent = coincidencia[1]
+          fragmento.appendChild(em)
+
+          ultimoIndice = regex.lastIndex
+        }
+
+        const textoDespues = texto.slice(ultimoIndice)
+
+        if (textoDespues) {
+          fragmento.appendChild(document.createTextNode(textoDespues))
+        }
+
+        node.parentNode.replaceChild(fragmento, node)
+      })
+    },
+  },
 }
 </script>
